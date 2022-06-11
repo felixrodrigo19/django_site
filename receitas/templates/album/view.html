@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% if people %}
+<ul class="list-group list-group-flush">
+
+    <li class="list-group-item">ID: {{people.id}}</li>
+    <li class="list-group-item">Name: {{people.name}}</li>
+    <li class="list-group-item">Description: {{people.description}}</li>
+    <li class="list-group-item">Created: {{people.created_at}}</li>
+
+</ul>
+{% endif %}
+{% endblock %}
